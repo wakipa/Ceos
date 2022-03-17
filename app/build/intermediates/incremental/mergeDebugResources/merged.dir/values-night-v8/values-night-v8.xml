@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <string-array name="emplacement_antenne">
+        <item value="521">Façade du poste extérieur</item>
+        <item value="522">Pignon extérieur poste</item>
+        <item value="523">Mur intérieur</item>
+        <item value="524">Intérieur sur appareil</item>
+    </string-array>
+    <string-array name="spinner_emplacement_concentrateur">
+        <item value="515">Tableau fixé au mur</item>
+        <item value="516">Fixé sur TIPI</item>
+        <item value="517">Sur paroi poste socle</item>
+        <item value="547">Coffret S300</item>
+        <item value="548">Coffret S22</item>
+        <item value="549">Coffret S2000</item>
+    </string-array>
+    <string-array name="type_antenne">
+        <item value="518">antenne déportée</item>
+        <item value="519">antenne origine</item>
+        <item value="520">antenne déportée amplifiée + 6dB</item>
+    </string-array>
+    <string-array name="type_inter">
+        <item>Pose</item>
+        <item>Remplacement</item>
+        <item>Dépose</item>
+    </string-array>
+    <string-array name="type_raccord">
+        <item value="541">Départ CCPI tri EP sur TUR</item>
+        <item value="542">Départ équipement auxiliaire tri sur TIPI</item>
+        <item value="543">Connecteur isolé sur laison BT Transfo - TUR</item>
+        <item value="544">Raccordement sur émergence</item>
+        <item value="545">Raccordement sur un départ du tableau BT</item>
+        <item value="546">Bornes BT du transfo</item>
+    </string-array>
+    <string name="Logo_Sicae">LOGO_SICAE</string>
+    <string name="acceder_au_formulaire">Accéder au formulaire</string>
+    <string name="ceos_gestionnaire_concentrateur">Ceos : Gestionnaire concentrateur</string>
+    <string name="commune">Commune :</string>
+    <string name="copyright_sicae_oise">Copyright : SICAE-OISE</string>
+    <string name="date">Date</string>
+    <string name="date_de_l_intervention">Date de l\'intervention :</string>
+    <string name="emplacement_antenne">Emplacement antenne :</string>
+    <string name="fiche_d_intervention">FICHE D\'INTERVENTION</string>
+    <string name="ip_carte_sim">IP cate SIM :</string>
+    <string name="mesure_signal_en_exterieur">Mesure signal en extérieur :</string>
+    <string name="mesure_signal_en_interieur_porte_fermee">Mesure signal en intérieur (porte fermée) :</string>
+    <string name="nom">Nom</string>
+    <string name="nom_de_l_agent">Nom de l\'agent :</string>
+    <string name="nom_du_poste">Nom du poste :</string>
+    <string name="numero_de_serie">Numéro de série :</string>
+    <string name="poste">Poste</string>
+    <string name="ref_wapiti">Réf WAPITI</string>
+    <string name="reference_wapiti">Référence WAPITI :</string>
+    <string name="signal_ext">Mesure signal en extérieur</string>
+    <string name="signal_in">Mesure signal en intérieur</string>
+    <string name="todo">TODO</string>
+    <string name="txt_emplacement_concent">Emplacement concentrateur :</string>
+    <string name="txt_type_raccord">Type de raccordement :</string>
+    <string name="txt_type_raccord2">Type raccordement</string>
+    <string name="type_antenne_posee">Type d\'antenne posée :</string>
+    <string name="type_d_intervention">Type d\'intervention :</string>
+    <string name="valider">Valider</string>
+    <style name="Theme.AppCompat.DayNight" parent="Theme.AppCompat"/>
+    <style name="Theme.AppCompat.DayNight.DarkActionBar" parent="Theme.AppCompat"/>
+    <style name="Theme.AppCompat.DayNight.Dialog" parent="Theme.AppCompat.Dialog"/>
+    <style name="Theme.AppCompat.DayNight.Dialog.Alert" parent="Theme.AppCompat.Dialog.Alert"/>
+    <style name="Theme.AppCompat.DayNight.Dialog.MinWidth" parent="Theme.AppCompat.Dialog.MinWidth"/>
+    <style name="Theme.AppCompat.DayNight.DialogWhenLarge" parent="Theme.AppCompat.DialogWhenLarge"/>
+    <style name="Theme.AppCompat.DayNight.NoActionBar" parent="Theme.AppCompat.NoActionBar"/>
+    <style name="Theme.Ceos" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.MaterialComponents.DayNight" parent="Theme.MaterialComponents"/>
+    <style name="Theme.MaterialComponents.DayNight.BottomSheetDialog" parent="Theme.MaterialComponents.BottomSheetDialog"/>
+    <style name="Theme.MaterialComponents.DayNight.Bridge" parent="Theme.MaterialComponents.Bridge"/>
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar" parent="Theme.MaterialComponents"/>
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar.Bridge" parent="Theme.MaterialComponents.Bridge"/>
+    <style name="Theme.MaterialComponents.DayNight.Dialog" parent="Theme.MaterialComponents.Dialog"/>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert" parent="Theme.MaterialComponents.Dialog.Alert"/>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert.Bridge" parent="Theme.MaterialComponents.Dialog.Alert.Bridge"/>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Bridge" parent="Theme.MaterialComponents.Dialog.Bridge"/>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize" parent="Theme.MaterialComponents.Dialog.FixedSize"/>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize.Bridge" parent="Theme.MaterialComponents.Dialog.FixedSize.Bridge"/>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth" parent="Theme.MaterialComponents.Dialog.MinWidth"/>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth.Bridge" parent="Theme.MaterialComponents.Dialog.MinWidth.Bridge"/>
+    <style name="Theme.MaterialComponents.DayNight.DialogWhenLarge" parent="Theme.MaterialComponents.DialogWhenLarge"/>
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar" parent="Theme.MaterialComponents.NoActionBar"/>
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar.Bridge" parent="Theme.MaterialComponents.NoActionBar.Bridge"/>
+    <style name="ThemeOverlay.AppCompat.DayNight" parent="ThemeOverlay.AppCompat.Dark"/>
+    <style name="ThemeOverlay.MaterialComponents.DayNight.BottomSheetDialog" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog"/>
+    <style name="Widget.MaterialComponents.ActionBar.PrimarySurface" parent="Widget.MaterialComponents.ActionBar.Surface"/>
+    <style name="Widget.MaterialComponents.AppBarLayout.PrimarySurface" parent="Widget.MaterialComponents.AppBarLayout.Surface"/>
+    <style name="Widget.MaterialComponents.BottomAppBar.PrimarySurface" parent="Widget.MaterialComponents.BottomAppBar"/>
+    <style name="Widget.MaterialComponents.BottomNavigationView.PrimarySurface" parent="Widget.MaterialComponents.BottomNavigationView"/>
+    <style name="Widget.MaterialComponents.TabLayout.PrimarySurface" parent="Widget.MaterialComponents.TabLayout"/>
+    <style name="Widget.MaterialComponents.Toolbar.PrimarySurface" parent="Widget.MaterialComponents.Toolbar.Surface"/>
+</resources>

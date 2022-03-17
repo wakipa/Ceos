@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:soundEffectsEnabled="true"
+    tools:context=".Formulaire">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:scrollbars="none"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="170dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="9dp"
+                android:singleLine="true"
+                android:text="@string/date_de_l_intervention"
+                app:layout_constraintEnd_toStartOf="@+id/input_date"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_formulaire" />
+
+            <Spinner
+                android:id="@+id/spinner_emplacement_antenne"
+                android:layout_width="220dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:entries="@array/emplacement_antenne"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_emplacement_antenne"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_type_antenne" />
+
+            <Spinner
+                android:id="@+id/input_commune"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:soundEffectsEnabled="true"
+                android:spinnerMode="dropdown"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_commune"
+                app:layout_constraintTop_toBottomOf="@+id/input_nom_agent" />
+
+            <TextView
+                android:id="@+id/txt_nom_agent"
+                android:layout_width="170dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/nom_de_l_agent"
+                app:layout_constraintEnd_toStartOf="@+id/input_nom_agent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_date" />
+
+            <TextView
+                android:id="@+id/num_serie_concentrateur"
+                android:layout_width="170dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/numero_de_serie"
+                app:layout_constraintEnd_toStartOf="@+id/input_num_serie"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_type_inter" />
+
+            <TextView
+                android:id="@+id/txt_type_inter"
+                android:layout_width="170dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/type_d_intervention"
+                app:layout_constraintEnd_toStartOf="@+id/spinner_type_inter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_ref_wapiti" />
+
+            <TextView
+                android:id="@+id/txt_type_raccord"
+                android:layout_width="170dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/txt_type_raccord"
+                app:layout_constraintEnd_toStartOf="@+id/spinner_type_raccord"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_ip_sim" />
+
+            <TextView
+                android:id="@+id/txt_nom_poste"
+                android:layout_width="170dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/nom_du_poste"
+                app:layout_constraintEnd_toStartOf="@+id/input_nom_poste"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_commune" />
+
+            <TextView
+                android:id="@+id/txt_type_antenne"
+                android:layout_width="170dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="23dp"
+                android:text="@string/type_antenne_posee"
+                app:layout_constraintEnd_toStartOf="@+id/spinner_type_antenne"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_type_raccord" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_nom_agent"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:hint="@string/nom"
+                android:inputType="textAutoCorrect"
+                android:singleLine="true"
+                android:soundEffectsEnabled="true"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_nom_agent"
+                app:layout_constraintTop_toBottomOf="@+id/input_date" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_ip_sim"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:hint="@string/ip_carte_sim"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_ip_sim"
+                app:layout_constraintTop_toBottomOf="@+id/input_num_serie" />
+
+            <TextView
+                android:id="@+id/txt_commune"
+                android:layout_width="170dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/commune"
+                app:layout_constraintEnd_toStartOf="@+id/input_commune"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_nom_agent" />
+
+            <TextView
+                android:id="@+id/txt_mesure_sign_ext"
+                android:layout_width="225dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/mesure_signal_en_exterieur"
+                app:layout_constraintEnd_toStartOf="@+id/input_signal_ext"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_mesure_sign_in" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_signal_ext"
+                android:layout_width="165dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp"
+                android:hint="@string/signal_ext"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_mesure_sign_ext"
+                app:layout_constraintTop_toBottomOf="@+id/input_signal_in" />
+
+            <Spinner
+                android:id="@+id/input_nom_poste"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:spinnerMode="dropdown"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_nom_poste"
+                app:layout_constraintTop_toBottomOf="@+id/input_commune" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_signal_in"
+                android:layout_width="165dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/signal_in"
+                android:inputType="text"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_mesure_sign_in"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_emplacement_antenne" />
+
+            <Spinner
+                android:id="@+id/input_ref_wapiti"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:spinnerMode="dropdown"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_ref_wapiti"
+                app:layout_constraintTop_toBottomOf="@+id/input_nom_poste" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_num_serie"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/numero_de_serie"
+                android:inputType="number"
+                android:maxLength="14"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/num_serie_concentrateur"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_type_inter" />
+
+            <Spinner
+                android:id="@+id/spinner_type_inter"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp"
+                android:entries="@array/type_inter"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_type_inter"
+                app:layout_constraintTop_toBottomOf="@+id/input_ref_wapiti" />
+
+            <Spinner
+                android:id="@+id/spinner_type_raccord"
+                android:layout_width="220dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="16dp"
+                android:entries="@array/type_raccord"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_type_raccord"
+                app:layout_constraintTop_toBottomOf="@+id/input_ip_sim" />
+
+            <EditText
+                android:id="@+id/input_date"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="1dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/date"
+                android:inputType="textUri|datetime"
+                android:singleLine="true"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/txt_date"
+                app:layout_constraintTop_toBottomOf="@+id/txt_formulaire" />
+
+            <TextView
+                android:id="@+id/txt_mesure_sign_in"
+                android:layout_width="225dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/mesure_signal_en_interieur_porte_fermee"
+                app:layout_constraintEnd_toStartOf="@+id/input_signal_in"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_emplacement_antenne" />
+
+            <TextView
+                android:id="@+id/txt_ip_sim"
+                android:layout_width="170dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/ip_carte_sim"
+                app:layout_constraintEnd_toStartOf="@+id/input_ip_sim"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/num_serie_concentrateur" />
+
+            <Spinner
+                android:id="@+id/spinner_type_antenne"
+                android:layout_width="220dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="6dp"
+                android:entries="@array/type_antenne"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_type_antenne"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_type_raccord" />
+
+            <TextView
+                android:id="@+id/txt_emplacement_antenne"
+                android:layout_width="170dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="17dp"
+                android:singleLine="true"
+                android:text="@string/emplacement_antenne"
+                app:layout_constraintEnd_toStartOf="@+id/spinner_emplacement_antenne"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_type_antenne" />
+
+            <TextView
+                android:id="@+id/txt_ref_wapiti"
+                android:layout_width="170dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/reference_wapiti"
+                app:layout_constraintEnd_toStartOf="@+id/input_ref_wapiti"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_nom_poste" />
+
+            <TextView
+                android:id="@+id/txt_formulaire"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="83dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="79dp"
+                android:text="@string/fiche_d_intervention"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/input_date"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_emplacement_concent"
+                android:layout_width="210dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:singleLine="true"
+                android:text="@string/txt_emplacement_concent"
+                app:layout_constraintEnd_toStartOf="@+id/spinner_emplacement_concentrateur"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_mesure_sign_ext" />
+
+            <Spinner
+                android:id="@+id/spinner_emplacement_concentrateur"
+                android:layout_width="180dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:entries="@array/spinner_emplacement_concentrateur"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_emplacement_concent"
+                app:layout_constraintTop_toBottomOf="@+id/input_signal_ext" />
+
+            <Button
+                android:id="@+id/btnValider"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="119dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="118dp"
+                android:text="@string/valider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_emplacement_concent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
